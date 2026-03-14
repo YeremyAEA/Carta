@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Carta a mi PRINCESA
+        </title>
+        <style>
+
+.corazon{
+position:fixed;
+top:-10px;
+font-size:  30px;
+animation:caer 5s linear infinite;
+}
+
+@keyframes caer{
+0%{
+transform:translateY(-10vh);
+}
+100%{
+transform:translateY(110vh);
+}
+}
+        body{
+text-align:center;
+font-family:Arial;
+}
+.Caja{
+border: 3px Solid black;
+background-color: rgba(206, 104, 236, 0.8);
+padding:20px;
+margin:20px auto;
+width:60%;
+border-radius:15px;
+box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}    
+        body{background-image: url(Fondo.jpg);
+background-color: rgba(255, 0, 234, 0.342);
+text-align: center;
+}
+.paraElla{
+text-align: end;
+border:3px solid black;
+background-color:rgba(255,255,255,0.7);
+padding:1px;
+margin: 100px;
+width:40%;
+border-radius:10px;
+}
+
+</style>
+    </head>
+<body>
+    <div class="Caja">
+    <h1>Bueno en primer lugar quiero dedicarte esta nota o carta, jijiji JALGKADJ, sabes lo especial que eres para mi y bueno</h1>
+    </div>
+    <div class="Caja"><h1>Quiero que sepas que te amo infinitamente y que cada dia quiero mejorar por ti y por un futuro junto a ti</h1></div>
+    <p>por eso te escribo esto, aunque se que es raro JADLGKJAD otros dan cartas pero yo doy paginas web, asi soy
+        te amo a mi manera y espero te guste</p>
+    <div class="Caja"><h2>Quiero que sepas lo importante que eres para mi, cada dia se lo mucho que te esfuerzas por simplemente soportarme y seguir con
+        tus estudios es algo que yo admiro muchisimo de ti, la mujer que eres ahora y la que eres hoy no tiene precio alguno
+        estoy agradecido con dios de que me halla puesto en tu camino y rezo por que nunca me quite de tu lado.
+    </h2></div>
+    <div class="paraElla">
+        <h5>- De tu Noviecito YEERMY jijiji T amo mi amor💗</h5>
+    </div>
+
+    <script>function crearCorazon(){
+const corazon = document.createElement("div");
+corazon.classList.add("corazon");
+corazon.innerHTML="💗";
+
+corazon.style.left=Math.random()*100+"vw";
+
+document.body.appendChild(corazon);
+
+setTimeout(()=>{
+corazon.remove();
+},5000);
+}
+
+setInterval(crearCorazon,300);
+</script>
+</body>
+</html>
